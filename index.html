@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[NOM DE L'AGENCE] — Études en France depuis les Comores</title>
+  <meta name="description" content="Agence d'accompagnement spécialisée pour les étudiants et bacheliers aux Comores souhaitant poursuivre leurs études en France. Orientation, candidatures, Campus France, visa étudiant.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@400;600&family=Bricolage+Grotesque:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    tailwind = { config: { corePlugins: { preflight: false } } }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Marges intérieures généreuses sur toutes les sections */
+    .max-w-\[1180px\] {
+      padding-left: clamp(1.5rem, 5vw, 4.5rem) !important;
+      padding-right: clamp(1.5rem, 5vw, 4.5rem) !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="site-header" id="top">
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <a href="#top" class="nav-logo" aria-label="Accueil">
+      <img src="img/logo.png" alt="Logo" style="height:52px;width:auto;display:block;">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu" role="list">
+      <li><a href="#accueil" class="nav-link"><span class="nav-dot" style="background:#2eb67d;"></span>Accueil</a></li>
+      <li><a href="#apropos" class="nav-link"><span class="nav-dot" style="background:#36c5f0;"></span>Agence</a></li>
+      <li><a href="#services" class="nav-link"><span class="nav-dot" style="background:#ffde7b;"></span>Services</a></li>
+      <li><a href="#accompagnement" class="nav-link"><span class="nav-dot" style="background:#2eb67d;"></span>Parcours</a></li>
+      <li><a href="#forfaits" class="nav-link"><span class="nav-dot" style="background:#36c5f0;"></span>Forfaits</a></li>
+      <li><a href="#faq" class="nav-link"><span class="nav-dot" style="background:#ffde7b;"></span>FAQ</a></li>
+      <li><a href="#contact" class="nav-link"><span class="nav-dot" style="background:#2eb67d;"></span>Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-dark nav-cta">Rendez-vous</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="accueil" class="bg-white relative overflow-hidden" aria-labelledby="hero-title">
+
+  <!-- Pattern points -->
+  <div class="absolute inset-0 pointer-events-none select-none" style="background-image:radial-gradient(circle,#d1d5db 1.5px,transparent 1.5px);background-size:24px 24px;opacity:.3;z-index:0;" aria-hidden="true"></div>
+
+  <div class="max-w-[1180px] mx-auto px-6 pt-10 pb-20 relative" style="z-index:1;">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-10 items-center">
+
+      <!-- Colonne gauche : texte -->
+      <div>
+        <!-- Titre -->
+        <h1 id="hero-title"
+            class="text-gray-900 leading-[1.05] mb-6"
+            style="font-weight:700;font-size:clamp(2.5rem,4.4vw,4.2rem);letter-spacing:-0.03em;">
+          Votre projet d'études en France<br>
+          <span style="color:#ffde7b;">✦ commence ici.</span>
+        </h1>
+
+        <!-- Sous-titre -->
+        <p class="text-gray-500 leading-relaxed mb-10" style="font-size:1.05rem;max-width:480px;">
+          Nous accompagnons les bacheliers et les étudiants aux Comores dans chaque étape de leur projet d'études en France, de la recherche d'école jusqu'à la demande de visa.
+        </p>
+
+        <!-- CTA -->
+        <div class="flex flex-wrap gap-3">
+          <a href="#accompagnement"
+             class="inline-flex items-center gap-2 font-bold px-8 py-[14px] rounded-[4px] text-[15px] transition-all hover:-translate-y-1 shadow-sm"
+             style="background:#ffde7b;color:#111111;">→ Notre accompagnement</a>
+          <a href="#contact"
+             class="inline-flex items-center gap-2 font-bold px-8 py-[14px] rounded-[4px] text-[15px] transition-all hover:-translate-y-1 border border-gray-200"
+             style="color:#111111;">Prendre RDV</a>
+        </div>
+      </div>
+
+      <!-- Colonne droite : image -->
+      <div class="flex items-center justify-center">
+        <img src="img/image 4 - Voyage.png"
+             alt="Étudiant voyageant vers la France"
+             class="w-full object-contain" style="max-height:520px;" loading="eager">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TICKER ===== -->
+<div class="overflow-hidden py-3.5" style="background:#111111;" aria-hidden="true">
+  <div class="marquee-track flex whitespace-nowrap">
+    <span class="text-white font-black text-[15px] px-5">Orientation</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Recherche d'écoles</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Campus France</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Candidatures</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Préparation entretien</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Visa étudiant</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Suivi personnalisé</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Orientation</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Recherche d'écoles</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Campus France</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Candidatures</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Préparation entretien</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Visa étudiant</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+    <span class="text-white font-black text-[15px] px-5">Suivi personnalisé</span><span class="text-[20px] px-2" style="color:#ffde7b;">✦</span>
+  </div>
+</div>
+
+<!-- ===== À PROPOS ===== -->
+<section class="py-24 bg-white" id="apropos" aria-labelledby="about-title">
+  <div class="max-w-[1180px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+      <!-- Left -->
+      <div>
+
+        <!-- Carte illustration principale -->
+        <div class="relative rounded-[6px] overflow-hidden mb-6" style="background:#2eb67d;min-height:280px;">
+          <div class="p-7 relative z-10">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="flex -space-x-2.5">
+                <img src="https://i.pravatar.cc/40?img=5" alt="Étudiant" class="w-9 h-9 rounded-full border-[2.5px] border-white/70 object-cover">
+                <img src="https://i.pravatar.cc/40?img=23" alt="Étudiant" class="w-9 h-9 rounded-full border-[2.5px] border-white/70 object-cover">
+                <img src="https://i.pravatar.cc/40?img=48" alt="Étudiant" class="w-9 h-9 rounded-full border-[2.5px] border-white/70 object-cover">
+              </div>
+              <span class="text-white/80 text-xs font-semibold">Étudiants accompagnés</span>
+            </div>
+            <p class="text-white font-bold text-xl leading-snug">Notre mission : vous guider à<br>chaque étape vers la France.</p>
+          </div>
+          <img src="img/Education-rafiki.png" alt="" aria-hidden="true"
+               class="absolute bottom-0 right-0 h-[220px] object-contain object-right-bottom opacity-90 pointer-events-none">
+        </div>
+
+        <!-- Feature list -->
+        <div class="space-y-3">
+          <div class="flex items-start gap-3 p-4 rounded-[6px] border border-gray-100 bg-gray-50">
+            <span class="text-lg flex-shrink-0">🎯</span>
+            <div>
+              <p class="font-bold text-sm text-gray-900">Orientation personnalisée</p>
+              <p class="text-xs text-gray-500 mt-0.5">Choix d'établissements adaptés à votre profil et vos objectifs.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-[6px] border border-gray-100 bg-gray-50">
+            <span class="text-lg flex-shrink-0">📋</span>
+            <div>
+              <p class="font-bold text-sm text-gray-900">Campus France &amp; Visa</p>
+              <p class="text-xs text-gray-500 mt-0.5">Accompagnement complet pour vos dossiers et entretiens.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-[6px] border border-gray-100 bg-gray-50">
+            <span class="text-lg flex-shrink-0">✈️</span>
+            <div>
+              <p class="font-bold text-sm text-gray-900">Suivi jusqu'à l'arrivée en France</p>
+              <p class="text-xs text-gray-500 mt-0.5">Nous restons à vos côtés même après votre départ des Comores.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right -->
+      <div>
+        <h2 id="about-title"
+            class="font-black text-gray-900 leading-tight mb-6"
+            style="font-size:clamp(1.8rem,3vw,2.4rem);letter-spacing:-0.02em;">
+          Nous aidons chaque étudiant à construire un projet d'études cohérent, réaliste et adapté à son profil.
+        </h2>
+        <p class="text-gray-500 leading-relaxed mb-8" style="font-size:1.05rem;">
+          Notre objectif est de simplifier les démarches et de proposer un accompagnement humain à chaque étape. Que vous soyez bachelier ou déjà dans le supérieur, nous vous guidons depuis les Comores pour préparer votre avenir en France dans les meilleures conditions.
+        </p>
+        <a href="#services"
+           class="inline-flex items-center gap-2 font-bold px-7 py-3.5 rounded-[3px] text-sm transition-all hover:-translate-y-1"
+           style="background:#111111;color:white;">Voir nos services →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services section-pad" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Ce que nous faisons</span>
+      <h2 class="section-title" id="services-title">Nos services</h2>
+    </div>
+    <div class="services-grid">
+      <article class="srv-card srv-yellow">
+        <div class="srv-icon" aria-hidden="true">🎯</div>
+        <h3>Orientation &amp; projet d'études</h3>
+        <p>Analyse de votre profil, de vos objectifs et sélection des formations adaptées à votre parcours.</p>
+      </article>
+      <article class="srv-card srv-mint">
+        <div class="srv-icon" aria-hidden="true">🏫</div>
+        <h3>Recherche d'écoles</h3>
+        <p>Identification des établissements privés et publics en France correspondant à votre projet.</p>
+      </article>
+      <article class="srv-card srv-white">
+        <div class="srv-icon" aria-hidden="true">📋</div>
+        <h3>Dossier de candidature</h3>
+        <p>Préparation, vérification et envoi de vos dossiers pour maximiser vos chances d'admission.</p>
+      </article>
+      <article class="srv-card srv-turq">
+        <div class="srv-icon" aria-hidden="true">🌐</div>
+        <h3>Procédure Campus France</h3>
+        <p>Accompagnement complet dans la procédure en ligne et préparation à l'entretien Campus France.</p>
+      </article>
+      <article class="srv-card srv-pink">
+        <div class="srv-icon" aria-hidden="true">🎤</div>
+        <h3>Préparation aux entretiens</h3>
+        <p>Entraînement, conseils et mises en situation pour aborder votre entretien avec confiance.</p>
+      </article>
+      <article class="srv-card srv-dark">
+        <div class="srv-icon" aria-hidden="true">📑</div>
+        <h3>Demande de visa étudiant</h3>
+        <p>Préparation et vérification du dossier de demande de visa pour étudier en France.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÉTAPES ===== -->
+<section class="steps section-pad" id="accompagnement" aria-labelledby="steps-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Comment ça marche</span>
+      <h2 class="section-title" id="steps-title">Les étapes de l'accompagnement</h2>
+    </div>
+    <div class="steps-list" role="list">
+      <div class="step-item" role="listitem">
+        <div class="step-num" aria-hidden="true">01</div>
+        <div class="step-body">
+          <h3>Étude du profil</h3>
+          <p>Analyse du parcours, des objectifs et du projet de l'étudiant.</p>
+        </div>
+      </div>
+      <div class="step-item" role="listitem">
+        <div class="step-num" aria-hidden="true">02</div>
+        <div class="step-body">
+          <h3>Orientation</h3>
+          <p>Sélection des formations et des établissements correspondant à son profil.</p>
+        </div>
+      </div>
+      <div class="step-item" role="listitem">
+        <div class="step-num" aria-hidden="true">03</div>
+        <div class="step-body">
+          <h3>Candidatures</h3>
+          <p>Préparation, vérification et envoi des différents dossiers.</p>
+        </div>
+      </div>
+      <div class="step-item" role="listitem">
+        <div class="step-num" aria-hidden="true">04</div>
+        <div class="step-body">
+          <h3>Campus France</h3>
+          <p>Accompagnement dans la procédure et préparation à l'entretien.</p>
+        </div>
+      </div>
+      <div class="step-item" role="listitem">
+        <div class="step-num" aria-hidden="true">05</div>
+        <div class="step-body">
+          <h3>Admission</h3>
+          <p>Suivi des réponses et accompagnement dans le choix de l'établissement.</p>
+        </div>
+      </div>
+      <div class="step-item" role="listitem">
+        <div class="step-num" aria-hidden="true">06</div>
+        <div class="step-body">
+          <h3>Visa</h3>
+          <p>Préparation et vérification du dossier de demande de visa étudiant.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POURQUOI NOUS ===== -->
+<section class="why section-pad" id="pourquoi" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Nos valeurs</span>
+      <h2 class="section-title" id="why-title">Pourquoi nous choisir ?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card why-yellow">
+        <span class="why-icon" aria-hidden="true">👤</span>
+        <h3>Accompagnement personnalisé</h3>
+        <p>Chaque étudiant est unique. Nous adaptons notre accompagnement à votre profil et à vos objectifs.</p>
+      </div>
+      <div class="why-card why-mint">
+        <span class="why-icon" aria-hidden="true">💡</span>
+        <h3>Conseils adaptés au profil</h3>
+        <p>Des conseils concrets et réalistes, adaptés à votre situation et à votre niveau d'études.</p>
+      </div>
+      <div class="why-card why-turq">
+        <span class="why-icon" aria-hidden="true">🔄</span>
+        <h3>Suivi à chaque étape</h3>
+        <p>Nous restons présents tout au long du processus, de la première orientation à l'obtention du visa.</p>
+      </div>
+      <div class="why-card why-pink">
+        <span class="why-icon" aria-hidden="true">💬</span>
+        <h3>Écoute et disponibilité</h3>
+        <p>Une équipe disponible pour répondre à vos questions et vous rassurer à chaque moment clé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORFAITS ===== -->
+<section class="pricing section-pad" id="forfaits" aria-labelledby="pricing-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Nos formules</span>
+      <h2 class="section-title" id="pricing-title">Nos forfaits</h2>
+    </div>
+    <div class="pricing-grid">
+      <article class="plan-card">
+        <div class="plan-header">
+          <h3>Forfait Orientation</h3>
+          <p class="plan-sub">Pour définir votre projet</p>
+        </div>
+        <div class="plan-price">Tarif à renseigner</div>
+        <ul class="plan-features" role="list">
+          <li>Analyse du profil et des objectifs</li>
+          <li>Sélection de formations adaptées</li>
+          <li>Liste d'établissements recommandés</li>
+          <li>Compte-rendu personnalisé</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline plan-btn">Choisir ce forfait</a>
+      </article>
+      <article class="plan-card plan-featured">
+        <div class="plan-badge">Recommandé</div>
+        <div class="plan-header">
+          <h3>Forfait Accompagnement complet</h3>
+          <p class="plan-sub">De l'orientation au visa</p>
+        </div>
+        <div class="plan-price">Tarif à renseigner</div>
+        <ul class="plan-features" role="list">
+          <li>Analyse du profil et orientation</li>
+          <li>Recherche d'établissements</li>
+          <li>Préparation des candidatures</li>
+          <li>Accompagnement Campus France</li>
+          <li>Préparation aux entretiens</li>
+          <li>Suivi des admissions</li>
+          <li>Dossier de demande de visa</li>
+          <li>Suivi personnalisé complet</li>
+        </ul>
+        <a href="#contact" class="btn btn-dark plan-btn">Choisir ce forfait</a>
+      </article>
+      <article class="plan-card">
+        <div class="plan-header">
+          <h3>Forfait Admission</h3>
+          <p class="plan-sub">Pour préparer vos dossiers</p>
+        </div>
+        <div class="plan-price">Tarif à renseigner</div>
+        <ul class="plan-features" role="list">
+          <li>Recherche d'établissements ciblés</li>
+          <li>Préparation des dossiers de candidature</li>
+          <li>Accompagnement Campus France</li>
+          <li>Préparation aux entretiens</li>
+          <li>Suivi des admissions</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline plan-btn">Choisir ce forfait</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TÉMOIGNAGES (placeholder) ===== -->
+<section class="testimonials section-pad" id="temoignages" aria-labelledby="testi-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Ils nous font confiance</span>
+      <h2 class="section-title" id="testi-title">Témoignages</h2>
+    </div>
+    <div class="testi-placeholder">
+      <div class="testi-icon" aria-hidden="true">💬</div>
+      <p>Les témoignages de nos étudiants accompagnés seront publiés ici prochainement.</p>
+      <span class="testi-note">— Section à compléter avec de vrais témoignages —</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq section-pad" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Vos questions</span>
+      <h2 class="section-title" id="faq-title">Questions fréquentes</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>À qui s'adresse votre accompagnement ?</summary>
+        <div class="faq-answer">Notre accompagnement s'adresse aux bacheliers et aux étudiants vivant aux Comores qui souhaitent poursuivre leurs études en France, ainsi qu'aux parents souhaitant aider leur enfant dans cette démarche.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Pouvez-vous m'aider à choisir ma formation ?</summary>
+        <div class="faq-answer">Oui. Nous analysons votre profil, votre parcours scolaire et vos objectifs pour vous proposer des formations adaptées à votre situation et réalistes par rapport à vos résultats.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Accompagnez-vous les candidatures dans les écoles privées et publiques ?</summary>
+        <div class="faq-answer">Oui, nous accompagnons les candidatures vers des établissements privés comme publics en France, selon votre projet et votre profil.</div>
+      </details>
+      <details class="faq-item">
+        <summary>M'aidez-vous pour la procédure Campus France ?</summary>
+        <div class="faq-answer">Oui. Nous vous accompagnons dans toutes les étapes de la procédure Campus France : création du dossier en ligne, choix des vœux et préparation à l'entretien.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Proposez-vous une préparation à l'entretien Campus France ?</summary>
+        <div class="faq-answer">Oui. Nous proposons une préparation à l'entretien Campus France avec des mises en situation, des conseils sur les questions fréquentes et un retour personnalisé.</div>
+      </details>
+      <details class="faq-item">
+        <summary>L'accompagnement garantit-il une admission ?</summary>
+        <div class="faq-answer">Non. Nous vous accompagnons et vous conseillons pour optimiser votre dossier et vos chances, mais nous ne pouvons pas garantir l'admission dans un établissement. La décision finale appartient à l'école.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Pouvez-vous m'aider pour la demande de visa ?</summary>
+        <div class="faq-answer">Oui. Nous vous aidons à préparer et vérifier votre dossier de demande de visa étudiant. Toutefois, nous ne pouvons pas garantir l'obtention du visa, la décision relevant des autorités consulaires.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Comment commencer l'accompagnement ?</summary>
+        <div class="faq-answer">Il vous suffit de remplir le formulaire de contact ou de nous écrire directement. Nous vous recontacterons pour convenir d'un premier échange afin de discuter de votre projet.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESSOURCES ===== -->
+<section class="blog section-pad" id="ressources" aria-labelledby="blog-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Conseils &amp; ressources</span>
+      <h2 class="section-title" id="blog-title">À venir sur notre blog</h2>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-tag">Orientation</div>
+        <h3>Comment choisir sa formation en France ?</h3>
+        <p>Critères de choix, types d'établissements et conseils pratiques pour trouver la formation qui correspond à votre profil.</p>
+        <span class="blog-coming">Article à venir</span>
+      </article>
+      <article class="blog-card">
+        <div class="blog-tag">Campus France</div>
+        <h3>Comment préparer son entretien Campus France ?</h3>
+        <p>Les questions fréquentes, les erreurs à éviter et les conseils pour bien se préparer à cet entretien décisif.</p>
+        <span class="blog-coming">Article à venir</span>
+      </article>
+      <article class="blog-card">
+        <div class="blog-tag">Candidature</div>
+        <h3>Les documents à préparer pour une candidature</h3>
+        <p>La liste complète des pièces nécessaires selon les établissements et les formations visées.</p>
+        <span class="blog-coming">Article à venir</span>
+      </article>
+      <article class="blog-card">
+        <div class="blog-tag">Conseils</div>
+        <h3>Organiser son projet depuis les Comores</h3>
+        <p>Étapes clés, calendrier et conseils pratiques pour bien préparer son projet d'études à distance.</p>
+        <span class="blog-coming">Article à venir</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<section class="cta-section" id="cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-deco" aria-hidden="true">✦</div>
+      <h2 class="cta-title" id="cta-title">Prêt à construire votre projet d'études en France ?</h2>
+      <p class="cta-text">Échangez avec notre équipe et découvrez l'accompagnement correspondant à votre situation.</p>
+      <div class="cta-actions">
+        <a href="#contact" class="btn btn-dark btn-lg">Prendre rendez-vous</a>
+        <a href="https://wa.me/[NUMERO_WHATSAPP]" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">💬 WhatsApp — [NUMÉRO À RENSEIGNER]</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Nous contacter</span>
+      <h2 class="section-title" id="contact-title">Parlons de votre projet</h2>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-info">
+        <h3>Nos coordonnées</h3>
+        <ul class="contact-details" role="list">
+          <li><span class="ci-label">📍 Adresse</span><span>[ADRESSE À RENSEIGNER], Comores</span></li>
+          <li><span class="ci-label">📞 Téléphone</span><span>[NUMÉRO À RENSEIGNER]</span></li>
+          <li><span class="ci-label">💬 WhatsApp</span><span>[NUMÉRO À RENSEIGNER]</span></li>
+          <li><span class="ci-label">✉️ E-mail</span><span>[E-MAIL À RENSEIGNER]</span></li>
+        </ul>
+        <div class="contact-social">
+          <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
+          <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate aria-label="Formulaire de contact">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prenom">Prénom <span aria-hidden="true">*</span></label>
+            <input type="text" id="prenom" name="prenom" required autocomplete="given-name" placeholder="Votre prénom">
+          </div>
+          <div class="form-group">
+            <label for="nom">Nom <span aria-hidden="true">*</span></label>
+            <input type="text" id="nom" name="nom" required autocomplete="family-name" placeholder="Votre nom">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">E-mail <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="votre@email.com">
+          </div>
+          <div class="form-group">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" autocomplete="tel" placeholder="+269 ...">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="niveau">Niveau d'études actuel <span aria-hidden="true">*</span></label>
+          <select id="niveau" name="niveau" required>
+            <option value="" disabled selected>Sélectionnez votre niveau</option>
+            <option value="terminale">Terminale / Baccalauréat</option>
+            <option value="bac1">Bac +1</option>
+            <option value="bac2">Bac +2</option>
+            <option value="bac3">Bac +3 et plus</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="projet">Votre projet d'études</label>
+          <input type="text" id="projet" name="projet" placeholder="Ex. : Licence en informatique, école de commerce...">
+        </div>
+        <div class="form-group">
+          <label for="message">Votre message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" required placeholder="Décrivez brièvement votre situation et votre projet..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark btn-lg form-submit">Envoyer ma demande</button>
+        <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="nav-logo" aria-label="[NOM DE L'AGENCE] — Retour en haut">
+          <span class="logo-icon" aria-hidden="true">✦</span>
+          <span class="logo-text">[NOM DE L'AGENCE]</span>
+        </a>
+        <p>Agence spécialisée dans l'accompagnement des étudiants aux Comores souhaitant poursuivre leurs études en France.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <h4>Navigation</h4>
+        <ul role="list">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#services">Nos services</a></li>
+          <li><a href="#accompagnement">Notre accompagnement</a></li>
+          <li><a href="#forfaits">Nos forfaits</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Coordonnées</h4>
+        <address>
+          <p>📍 [ADRESSE À RENSEIGNER], Comores</p>
+          <p>📞 [NUMÉRO À RENSEIGNER]</p>
+          <p>💬 WhatsApp : [NUMÉRO À RENSEIGNER]</p>
+          <p>✉️ [E-MAIL À RENSEIGNER]</p>
+        </address>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">fb</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 [NOM DE L'AGENCE]. Tous droits réservés.</p>
+      <div class="footer-legal">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
