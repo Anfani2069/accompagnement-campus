@@ -112,67 +112,72 @@
 </div>
 
 <!-- ===== À PROPOS ===== -->
-<section class="py-24 bg-white" id="apropos" aria-labelledby="about-title">
+<section class="py-24" id="apropos" aria-labelledby="about-title" style="background:#f7f7f5;">
   <div class="max-w-[1180px] mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 xl:gap-24 items-start">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 xl:gap-24 items-center">
 
-      <!-- Left -->
-      <div>
-
-        <!-- Carte illustration principale -->
-        <div class="relative rounded-[6px] overflow-hidden mb-6" style="background:#2eb67d;min-height:280px;">
-          <div class="p-7 relative z-10">
-            <div class="flex items-center gap-3 mb-5">
-              <div class="flex -space-x-2.5">
-                <img src="https://i.pravatar.cc/40?img=5" alt="Étudiant" class="w-9 h-9 rounded-full border-[2.5px] border-white/70 object-cover">
-                <img src="https://i.pravatar.cc/40?img=23" alt="Étudiant" class="w-9 h-9 rounded-full border-[2.5px] border-white/70 object-cover">
-                <img src="https://i.pravatar.cc/40?img=48" alt="Étudiant" class="w-9 h-9 rounded-full border-[2.5px] border-white/70 object-cover">
-              </div>
-              <span class="text-white/80 text-xs font-semibold">Étudiants accompagnés</span>
-            </div>
-            <p class="text-white font-bold text-xl leading-snug">Notre mission : vous guider à<br>chaque étape vers la France.</p>
-          </div>
-          <img src="img/Education-rafiki.png" alt="" aria-hidden="true"
-               class="absolute bottom-0 right-0 h-[220px] object-contain object-right-bottom opacity-90 pointer-events-none">
+      <!-- Left : image card -->
+      <div class="relative">
+        <!-- Photo principale -->
+        <div class="overflow-hidden">
+          <img src="img/image 3 - edu.png"
+               alt="Étudiants en cours"
+               class="w-full object-cover object-center"
+               style="height:380px;">
         </div>
 
-        <!-- Feature list -->
-        <div class="space-y-3">
-          <div class="flex items-start gap-3 p-4 rounded-[6px] border border-gray-100 bg-gray-50">
-            <span class="text-lg flex-shrink-0">🎯</span>
+        <!-- Badge flottant bas-droite -->
+        <div class="absolute -bottom-5 -right-4 bg-white rounded-xl flex items-center gap-3 px-5 py-4"
+             style="box-shadow:0 8px 32px rgba(0,0,0,.12);">
+          <span style="font-size:1.6rem;">🎓</span>
+          <div>
+            <p class="font-black text-gray-900 text-lg leading-none">100%</p>
+            <p class="text-xs text-gray-500 mt-0.5">Suivi personnalisé</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right : texte -->
+      <div class="pt-6 md:pt-0">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest mb-4" style="color:#2eb67d;">À propos de notre agence</span>
+        <h2 id="about-title"
+            class="font-black text-gray-900 leading-tight mb-6"
+            style="font-size:clamp(1.8rem,3vw,2.5rem);letter-spacing:-0.02em;">
+          Chaque étudiant mérite un accompagnement
+          <span style="color:#2eb67d;">à la hauteur de son ambition.</span>
+        </h2>
+        <p class="text-gray-500 leading-relaxed mb-8" style="font-size:1.05rem;text-align:justify;">
+          Depuis les Comores, nous guidons chaque bachelier et étudiant vers les meilleures opportunités d'études en France — avec méthode, transparence et un suivi humain à chaque étape.
+        </p>
+
+        <!-- Features -->
+        <div class="space-y-4 mb-8">
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 text-lg"
+                 style="background:#ffde7b;">🎯</div>
             <div>
-              <p class="font-bold text-sm text-gray-900">Orientation personnalisée</p>
-              <p class="text-xs text-gray-500 mt-0.5">Choix d'établissements adaptés à votre profil et vos objectifs.</p>
+              <p class="font-bold text-sm text-gray-900">Orientation sur mesure</p>
+              <p class="text-xs text-gray-500 mt-0.5">Formations et établissements sélectionnés selon votre profil.</p>
             </div>
           </div>
-          <div class="flex items-start gap-3 p-4 rounded-[6px] border border-gray-100 bg-gray-50">
-            <span class="text-lg flex-shrink-0">📋</span>
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 text-lg"
+                 style="background:#e0f5ec;">📋</div>
             <div>
               <p class="font-bold text-sm text-gray-900">Campus France &amp; Visa</p>
-              <p class="text-xs text-gray-500 mt-0.5">Accompagnement complet pour vos dossiers et entretiens.</p>
+              <p class="text-xs text-gray-500 mt-0.5">Accompagnement complet de la procédure jusqu'au visa.</p>
             </div>
           </div>
-          <div class="flex items-start gap-3 p-4 rounded-[6px] border border-gray-100 bg-gray-50">
-            <span class="text-lg flex-shrink-0">✈️</span>
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 text-lg"
+                 style="background:#e8eeff;">✈️</div>
             <div>
-              <p class="font-bold text-sm text-gray-900">Suivi jusqu'à l'arrivée en France</p>
+              <p class="font-bold text-sm text-gray-900">Suivi jusqu'en France</p>
               <p class="text-xs text-gray-500 mt-0.5">Nous restons à vos côtés même après votre départ des Comores.</p>
             </div>
           </div>
         </div>
 
-      </div>
-
-      <!-- Right -->
-      <div>
-        <h2 id="about-title"
-            class="font-black text-gray-900 leading-tight mb-6"
-            style="font-size:clamp(1.8rem,3vw,2.4rem);letter-spacing:-0.02em;">
-          Nous aidons chaque étudiant à construire un projet d'études cohérent, réaliste et adapté à son profil.
-        </h2>
-        <p class="text-gray-500 leading-relaxed mb-8" style="font-size:1.05rem;">
-          Notre objectif est de simplifier les démarches et de proposer un accompagnement humain à chaque étape. Que vous soyez bachelier ou déjà dans le supérieur, nous vous guidons depuis les Comores pour préparer votre avenir en France dans les meilleures conditions.
-        </p>
         <a href="#services"
            class="inline-flex items-center gap-2 font-bold px-7 py-3.5 rounded-[3px] text-sm transition-all hover:-translate-y-1"
            style="background:#111111;color:white;">Voir nos services →</a>
